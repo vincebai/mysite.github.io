@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="login.js"></script>
+    </head>
+    
+    <body>
+        <div wrapper>
+            <div container>
+                <div class="titlebar">
+                    <h1>Welcome, friends.</h1>
+                    <input type="button" value="Login" id="login" class="astext"/>
+                    <input type="button" value="Signup" id="signup" class="astext" onclick="openLogin()"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main">
+                <div  id="loginPopup">
+                    <form id="form_id" method="post" name="form" action="form.asp">
+                        <div> 
+                            <h2>Login Form</h2>
+                            <label for="username"> Username :</label>
+                            <input type="text" name="username" id="username"/>
+                            <label for="password">Password :</label>
+                            <input type="text" name="password" id="password"/>
+                            <input type="button" value="Login" id="submit" onclick="validate()"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+    
+    
+</html>
